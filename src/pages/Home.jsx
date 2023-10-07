@@ -1,6 +1,7 @@
 import AboutUsBanner from "../components/AboutUsBanner";
 import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
+import Newsletter from "../components/Newsletter";
 import Services from "../components/Services";
 
 
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <AboutUsBanner></AboutUsBanner>
             <Services></Services>
+            <Newsletter></Newsletter>
         </div>
     );
 };

@@ -14,7 +14,7 @@ const AboutUsBanner = () => {
 
                 <div className='flex flex-col md:flex-row lg:flex-row gap-5'>
 
-                    <div className='flex gap-2 w-[250px] md:[450px] lg:w-[450px]'>
+                    <div className='flex gap-2 w-[250px] md:w-[450px] lg:w-[450px]'>
                         <img className=' h-8' src="https://i.ibb.co/w6PfLg8/magic-wand.png" alt="" />
                         <div>
                             <h1 className='font-bold'>Exceptional Creativity and Innovation</h1>
@@ -22,7 +22,7 @@ const AboutUsBanner = () => {
                         </div>
                     </div>
 
-                    <div className='flex gap-2 w-[250px] md:[450px] lg:w-[450px]'>
+                    <div className='flex gap-2 w-[250px] md:w-[450px] lg:w-[450px]'>
                         <img className=' h-8' src="https://i.ibb.co/NZHmq1Q/search.png" alt="" />
                         <div>
                             <h1 className='font-bold'>Meticulous Attention to Detail</h1>
@@ -34,7 +34,7 @@ const AboutUsBanner = () => {
 
                 <div className='flex flex-col md:flex-row lg:flex-row gap-5'>
 
-                    <div className='flex gap-2 w-[250px] md:[450px] lg:w-[450px]'>
+                    <div className='flex gap-2 w-[250px] md:w-[450px] lg:w-[450px]'>
                         <img className=' h-8' src="https://i.ibb.co/3R0wY9F/deal.png" alt="" />
                         <div>
                             <h1 className='font-bold'>Professionalism and Reliability</h1>

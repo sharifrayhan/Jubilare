@@ -36,6 +36,8 @@ const AllContext = ({ children }) => {
             .then(data => setCards(data) )
     }, []);
 
+   
+
     const logOut = () => {
       setLoading(true)
       return signOut(auth);
@@ -44,7 +46,7 @@ const AllContext = ({ children }) => {
     const pass = {
       user,
       logOut,
-      cards
+      cards,
     
   }
 

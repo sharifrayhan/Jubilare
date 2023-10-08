@@ -6,7 +6,7 @@
       "venue": "Khulna Convention Center",
       "ticket_price": "$7",
       "description": "Prepare to laugh your heart out as comedian Dominic Barrreat takes the stage for a side-splitting comedy standup show. Get ready for an evening filled with laughter and unforgettable humor. This hilarious night is not to be missed!",
-      "image_link": "https://i.ibb.co/XVc1xXK/comedy.jpg"
+      "image": "https://i.ibb.co/XVc1xXK/comedy.jpg"
     },
     {
       "event_name": "Urban Music Orchestra at City Mega Hall Khulna",
@@ -15,16 +15,16 @@
       "venue": "City Mega Hall, Khulna",
       "ticket_price": "$20",
       "description": "Immerse yourself in the mesmerizing sounds of the Urban Music Orchestra. Join us for a musical journey like no other, featuring a symphony of urban rhythms that will captivate your senses. Experience the magic of live music!",
-      "image_link": "https://i.ibb.co/RjTNtzP/music.jpg"
+      "image": "https://i.ibb.co/RjTNtzP/music.jpg"
     },
     {
-      "event_name": "DJ Party with DJ Ersfjordbotn",
+      "event_name": "Party with DJ Ersfjordbotn at Khulna Zilla Stadium",
       "date": "December 2, 2023",
       "time": "10:00 PM",
       "venue": "Khulna Zilla Stadium",
       "ticket_price": "$30",
       "description": "Get ready to dance the night away at our electrifying DJ party with DJ Ersfjordbotn. Join us for an unforgettable night of music, dance, and entertainment. The Khulna Zilla Stadium will come alive with beats and excitement!",
-      "image_link": "https://i.ibb.co/zRNqXBm/dj.jpg"
+      "image": "https://i.ibb.co/zRNqXBm/dj.jpg"
     }
   ]
   

@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 
 import Swal from 'sweetalert2';
 
-const AboutUs = () => {
+const ContactUs = () => {
 
     const getForm = useRef();
 
@@ -31,13 +31,13 @@ const AboutUs = () => {
                     <div className='border-l-2 border-r-2 border-b-2 rounded-b-full border-white pb-2 pl-2 pr-2'>
                         <img className='  max-h-[300px] rounded-b-full ' src="https://i.ibb.co/JpLxSGf/us.jpg" alt="" />
                     </div>
-                    <div className=' p-6 flex flex-col gap-2 items-center text-center'>
+                    <div className=' p-11 flex flex-col gap-2 items-center text-center'>
                         
-                        <p className='text-white '>Have questions or ready to start planning your next unforgettable event with Jubilare Entertainment Event Management? Reach out to us today! We're here to make your dreams a reality. </p>
+                        <p className='text-white text-md font-bold '>Have questions or ready to start planning your next unforgettable event with Jubilare Entertainment Event Management? Reach out to us today! We're here to make your dreams a reality. </p>
 
-                            <h1 className='text-white '><span className='font-bold '>Email:</span> contact@jubilareevents.com</h1>
-                            <h1 className='text-white '><span className='font-bold '>phone:</span> +1 (123) 456-7890</h1>
-                            <h1 className='text-white '><span className='font-bold '>Address:</span> 124 Naser Road, Khulna, Bangladesh</h1>
+                            <h1 className='text-white '><span className=' font-bold text-orange-500'>Email:</span> contact@jubilareevents.com</h1>
+                            <h1 className='text-white '><span className='font-bold text-orange-500'>phone:</span> +1 (123) 456-7890</h1>
+                            <h1 className='text-white '><span className='font-bold text-orange-500 '>Address:</span> 124 Naser Road, Khulna, Bangladesh</h1>
                             <p className='text-white '>Feel free to drop us a message using the form below, and we'll get back to you as soon as possible. Thank you for considering Jubilare for your event needs. We can't wait to create magic with you!</p>
                         
                     </div>
@@ -58,4 +58,4 @@ const AboutUs = () => {
     );
 };
 
-export default AboutUs;
+export default ContactUs;

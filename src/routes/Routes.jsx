@@ -5,6 +5,10 @@ import Rootpage from "../pages/Rootpage.jsx";
 import Details from "../pages/Details";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import UpcomingEvents from "../pages/UpcomingEvents";
+import Pricing from "../pages/Pricing";
+import AboutUs from "../pages/AboutUs";
+import ContactUs from "../pages/ContactUs";
 
 
 const router = createBrowserRouter([
@@ -29,6 +33,22 @@ const router = createBrowserRouter([
       {
         path: "/Register",
         element: <Register></Register>,
+      },
+      {
+        path: "/Upcoming-events",
+        element: <UpcomingEvents></UpcomingEvents>,
+      },
+      {
+        path: "/Pricing",
+        element: <Pricing></Pricing>,
+      },
+      {
+        path: "/About-us",
+        element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/Contact-us",
+        element: <ContactUs></ContactUs>,
       }
     ],
   },

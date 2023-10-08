@@ -18,7 +18,7 @@ const EventCards = ({card}) => {
             <div className='p-4'>
                 <img className=' rounded-md h-[500px]  ' src={card?.image} alt="" />
             </div>
-            <div className=' p-6 flex flex-col gap-2 items-center text-center'>
+            <div className=' pl-6 pr-6 pb-6 flex flex-col gap-2 items-center text-center'>
                 <h1 className='text-white font-semibold text-xl'>{card?.event_name}</h1>
                 <p className='text-white '>{card?.description}</p>
                 <p className='text-white '><span className=' font-bold text-orange-500'>Date: </span>{card?.date}</p>

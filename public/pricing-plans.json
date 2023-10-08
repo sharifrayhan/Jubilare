@@ -1,0 +1,171 @@
+[
+    {
+      "id": "1",
+      "image": "https://i.ibb.co/YdM2rXf/music-events.jpg",
+      "title": "Concerts & Musical Festivals",
+      "pricing_plans": [
+        {
+          "id": "bronze",
+          "name": "Bronze Package",
+          "price": "Starting from $350",
+          "includes": "General admission to the concert or festival.",
+          "additional_options": "Food and beverage vouchers available for purchase."
+        },
+        {
+          "id": "silver",
+          "name": "Silver Package",
+          "price": "Starting from $550",
+          "includes": "General admission, VIP seating, and access to exclusive backstage areas.",
+          "additional_options": "VIP catering and meet-and-greet with artists."
+        },
+        {
+          "id": "gold",
+          "name": "Gold Package",
+          "price": "Starting from $950",
+          "includes": "VIP seating, backstage access, premium catering, and a commemorative gift.",
+          "additional_options": "Luxury transportation to the event and personal concierge service."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "image": "https://i.ibb.co/nwjxmRS/Themed-parties-events.jpg",
+      "title": "Themed Parties",
+      "pricing_plans": [
+        {
+          "id": "essential",
+          "name": "Essential Package",
+          "price": "Starting from $100",
+          "includes": "Entrance to the themed party, costume rental, and access to themed activities.",
+          "additional_options": "Food and drink packages available for purchase."
+        },
+        {
+          "id": "premium",
+          "name": "Premium Package",
+          "price": "Starting from $250",
+          "includes": "Entrance, costume rental, VIP lounge access, and premium themed activities.",
+          "additional_options": "Themed photo booth and personalized party favors."
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Package",
+          "price": "Starting from $500",
+          "includes": "VIP entrance, costume rental, private VIP lounge, premium activities, and a dedicated host.",
+          "additional_options": "Customized decorations and entertainment."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "image": "https://i.ibb.co/hLxmDSV/art-events.jpg",
+      "title": "Art Exhibitions",
+      "pricing_plans": [
+        {
+          "id": "standard",
+          "name": "Standard Admission",
+          "price": "Starting from $300",
+          "includes": "General admission to the art exhibition.",
+          "additional_options": "Guided tours and art catalog purchase."
+        },
+        {
+          "id": "enthusiast",
+          "name": "Art Enthusiast Package",
+          "price": "Starting from $450",
+          "includes": "Priority admission, guided tour, and a limited edition art print.",
+          "additional_options": "Exclusive artist meet-and-greet."
+        },
+        {
+          "id": "collector",
+          "name": "Art Collector Experience",
+          "price": "Starting from $800",
+          "includes": "VIP admission, private curator-led tour, exclusive art piece, and champagne reception.",
+          "additional_options": "Art acquisition consultation."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "image": "https://i.ibb.co/w6Msgnz/film-events.jpg",
+      "title": "Film Screenings and Premieres",
+      "pricing_plans": [
+        {
+          "id": "movie_buff",
+          "name": "Movie Buff Pass",
+          "price": "Starting from $50",
+          "includes": "General admission to the film screening.",
+          "additional_options": "Concession stand access."
+        },
+        {
+          "id": "vip_premiere",
+          "name": "VIP Premiere Pass",
+          "price": "Starting from $150",
+          "includes": "VIP admission, red carpet experience, and access to the after-party.",
+          "additional_options": "Exclusive filmmaker Q&A session."
+        },
+        {
+          "id": "directors_cut",
+          "name": "Director's Cut Experience",
+          "price": "Starting from $300",
+          "includes": "Director's cut screening, VIP lounge access, private filmmaker reception, and souvenir booklet.",
+          "additional_options": "Signed movie memorabilia."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "image": "https://i.ibb.co/3vF47Xd/sports-event.jpg",
+      "title": "Sports Events",
+      "pricing_plans": [
+        {
+          "id": "spectator",
+          "name": "Spectator Pass",
+          "price": "Starting from $150",
+          "includes": "General admission to the sports event.",
+          "additional_options": "Concession vouchers."
+        },
+        {
+          "id": "athlete_experience",
+          "name": "Athlete Experience",
+          "price": "Starting from $300",
+          "includes": "VIP seating, athlete meet-and-greet, and access to exclusive athlete lounge.",
+          "additional_options": "Charity auction participation."
+        },
+        {
+          "id": "ultimate_fan",
+          "name": "Ultimate Fan Package",
+          "price": "Starting from $600",
+          "includes": "VIP seating, athlete meet-and-greet, signed merchandise, and premium catering.",
+          "additional_options": "Sports memorabilia collection."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "image": "https://i.ibb.co/RpJZZBQ/comedy-events.jpg",
+      "title": "Standup Comedy",
+      "pricing_plans": [
+        {
+          "id": "comedy_enthusiast",
+          "name": "Comedy Enthusiast",
+          "price": "Starting from $200",
+          "includes": "General admission to the standup comedy show.",
+          "additional_options": "Comedy club drink specials."
+        },
+        {
+          "id": "vip_comedy",
+          "name": "VIP Comedy Experience",
+          "price": "Starting from $350",
+          "includes": "VIP seating, meet-and-greet with comedians, and access to a private comedy lounge.",
+          "additional_options": "Autographed comedy posters."
+        },
+        {
+          "id": "laugh_a_lot_premium",
+          "name": "Laugh-a-Lot Premium Package",
+          "price": "Starting from $600",
+          "includes": "Front-row VIP seating, backstage access, personalized comedy set, and gourmet dinner.",
+          "additional_options": "Exclusive comedy workshop with comedians."
+        }
+      ]
+    }
+  ]
+  

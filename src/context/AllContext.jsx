@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import toast, { Toaster } from 'react-hot-toast';
 import { createContext, useEffect, useState } from "react";
-import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import app from "../firebase/Firebase.config";
 
 
@@ -13,6 +14,16 @@ const AllContext = ({ children }) => {
 
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
+    const [registerError, setRegisterError] = useState('')
+    const [registerSuccess, setRegisterSuccess] = useState('')
+
+    if(registerError){
+      alert('This is an error!');
+    }
+  
+    if(registerSuccess){
+      alert('Successfully created!');
+    }
   
   
     useEffect(()=>{
@@ -26,15 +37,40 @@ const AllContext = ({ children }) => {
         }
     },[])
 
+    const createUser = (email,password) => {
+      setLoading(true)
+      return createUserWithEmailAndPassword(auth, email, password)
+  }
 
-    const [cards, setCards] = useState([])
+  const handleRegister = e => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const name = form.get('email');
+    const url = form.get('url');
+    const email = form.get('email');
+    const password = form.get('password');
+    console.log(email,password)
+    setRegisterError('')
+    setRegisterSuccess('')
 
-    
-    useEffect(() => {
-        fetch('services.json')
-            .then(result => result.json())
-            .then(data => setCards(data) )
-    }, []);
+    createUser(email,password)
+    .then(result=>{
+        console.log(result.user)
+        setRegisterSuccess(result.user)
+
+        
+    })
+    .catch(error=>{
+        console.error(error)
+        setRegisterError(error.message)
+    })
+}
+
+  const signIn = (email,password) => {
+    setLoading(true)
+    return signInWithEmailAndPassword(auth, email, password)
+}
+
 
    
 
@@ -46,7 +82,11 @@ const AllContext = ({ children }) => {
     const pass = {
       user,
       logOut,
-      cards,
+      createUser,
+      signIn,
+      loading,
+      handleRegister,
+
     
   }
 

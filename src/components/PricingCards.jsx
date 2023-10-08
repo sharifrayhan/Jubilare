@@ -13,7 +13,7 @@ const PricingCards = ({card}) => {
         Swal.fire({
             position: 'center',
             icon: 'success',
-            title: 'Thank You For Choosing Us <br /> We will contact to you soon',
+            title: 'Thank You For Choosing Us <br /> We will contact you soon',
             showConfirmButton: false,
             timer: 2500 
           })

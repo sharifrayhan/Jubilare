@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Services from "../components/Services";
+import Footer from "./Footer";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <AboutUsBanner></AboutUsBanner>
             <Services></Services>
             <Newsletter></Newsletter>
+            <Footer></Footer>
         </div>
     );
 };

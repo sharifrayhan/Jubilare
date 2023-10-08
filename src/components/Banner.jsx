@@ -12,7 +12,7 @@ const Banner = () => {
             </a>
             <center className=" text-white  ease-in-out ">
                 <button className=" py-1 md:py-2 lg:py-2 px-1 md:px-4 lg:px-4 text-xs md:text-sm lg:text-sm glass rounded-md bg-gradient-to-r from-[#883aac]  to-[#da1d93] text-white">Your Ultimate Event Partner</button>
-        <h1 className=" text-2xl md:text-4xl lg:text-7xl">Experience the Magic of <br /> <span>Jubilare Events</span> </h1>
+        <h1 className=" text-2xl md:text-4xl font-bold lg:text-7xl">Experience the Magic of <br /> <span>Jubilare Events</span> </h1>
         </center>
             <a href="#slide2" className="btn btn-sm md:btn-md lg:btn-md btn-circle">
               ❯

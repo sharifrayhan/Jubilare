@@ -5,13 +5,16 @@ const AboutUsBanner = () => {
     return (
         <div className=' flex flex-col gap-7 md:flex-col lg:flex-row  px-9 py-28 bg-[url(https://i.ibb.co/4SW8Jpz/bg-white.jpg)] bg-cover -mt-2'>
 
-            <div className='mr-24 w-[280px] md:w-[350px] lg:w-[350px]'>
+            <div className='mr-24 w-[280px] md:w-[350px] lg:w-[350px]' data-aos="fade-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
                 <h1 className='font-bold text-4xl mb-1'>Trusted By Over <br /> 150+ Clients</h1>
                 <p className='mb-1'>With Jubilare Celebrations Come to Life</p>
                 <Link to="/Contact-us"><button className=" py-1 md:py-3 lg:py-3 px-1 md:px-4 lg:px-4 text-xs md:text-sm lg:text-sm glass rounded-md bg-gradient-to-r from-[#883aac]  to-[#da1d93] text-white">Contact Us</button></Link>
             </div>
 
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4' data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
 
                 <div className='flex flex-col md:flex-row lg:flex-row gap-5'>
 

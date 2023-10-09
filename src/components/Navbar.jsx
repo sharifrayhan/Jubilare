@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 import { Context } from "../context/AllContext";
 
 const Navbar = () => {
-  const { user, logOut, registerSuccess, loginSuccess } = useContext(Context);
+  const { user, logOut, registerSuccess } = useContext(Context);
 
-  console.log(registerSuccess.photoURL)
-  const userName = user?.displayName
-  const userPhoto = user?.photoURL
-
+  console.log(registerSuccess.photoURL);
+  const userName = user?.displayName;
+  const userPhoto = user?.photoURL;
 
   const handleLogOut = () => {
     logOut();
@@ -33,39 +32,9 @@ const Navbar = () => {
   );
 
   return (
-
-    // <div className=" sticky z-20 bg-transparent">
-    //     <div className=" flex flex-col">
-    //         <div className=" flex items-center bg-transparent justify-between">
-    //             <div>
-    //             <img className=" h-4 w-6" src="https://i.ibb.co/GvkDr8K/menu.png" alt="" /> 
-    //             </div>
-    //             <div>
-    //                 <ul>
-    //                 {navLinks}
-    //                 </ul>
-    //             </div>
-
-    //             <div>
-
-    //             </div>
-
-
-    //         </div>
-    //         <div>
-    //             <ul>
-    //             {navLinks}
-    //             </ul>
-    //         </div>
-    //     </div>
-    // </div>
-
-
-
     <div className=" sticky z-20">
       <div className="navbar p-0  glass  flex items-center px-2 md:px-9 lg:px-10 mx-auto bg-gray-500 md:bg-transparent  lg:bg-transparent ">
         <div className="navbar-start">
-          
           <div className="dropdown ">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -82,7 +51,6 @@ const Navbar = () => {
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-              {/* <img className=" h-4 w-6" src="https://i.ibb.co/GvkDr8K/menu.png" alt="" /> */}
             </label>
 
             <ul
@@ -104,23 +72,16 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end flex gap-2">
-          {/* <label tabIndex={0} className="btn btn-ghost btn-circle"> */}
-            
-              {user && userName && userPhoto && (
-               <div className=" flex items-center gap-2 glass px-3 p-1 rounded-md">
-               <img
+          {user && userName && userPhoto && (
+            <div className=" flex items-center gap-2 glass px-3 p-1 rounded-md">
+              <img
                 className=" w-9 h-9 avatar rounded-full "
                 src={userPhoto}
                 alt=""
               />
               <h1 className=" text-white text-xs">{userName}</h1>
-              </div>)}
-              {/* // )}
-              // {user && userName && ( */}
-              {/* // <h1 className=" text-white text-xs">{userName}</h1>)} */}
-              
-           
-          {/* </label> */}
+            </div>
+          )}
           {user ? (
             <button
               onClick={handleLogOut}
@@ -136,7 +97,6 @@ const Navbar = () => {
             </Link>
           )}
         </div>
-        
       </div>
     </div>
   );

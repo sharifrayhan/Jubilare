@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from "react";
 import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from "../firebase/Firebase.config";
 import Swal from 'sweetalert2'
-import { useNavigate } from 'react-router-dom';
+
 
 
 export const Context = createContext(null);
@@ -198,7 +198,10 @@ const AllContext = ({ children }) => {
     const logOut = () => {
       setLoading(true)
       setRegisterSuccess('')
+      setRegisterError('')
+      setTermsError('')
       setLoginSuccess('')
+      setLoginError('')
       setGoogleSuccess('')
       return signOut(auth);
   }

@@ -1,4 +1,5 @@
-import React, { Children, useContext } from 'react';
+import PropTypes from "prop-types";
+import {  useContext } from 'react';
 
 import { Navigate, useLocation } from 'react-router-dom';
 import { Context } from '../context/AllContext';
@@ -20,5 +21,9 @@ const PrivateRoute = ({children}) => {
 
  
 };
+
+PrivateRoute.propTypes = {
+    children: PropTypes.node,
+  };
 
 export default PrivateRoute;

@@ -11,7 +11,6 @@ import AboutUs from "../pages/AboutUs";
 import ContactUs from "../pages/ContactUs";
 import PrivateRoute from "./PrivateRoute";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +23,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/Details/:id",
-        element: <PrivateRoute><Details></Details></PrivateRoute>,
+        element: (
+          <PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>
+        ),
         loader: () => fetch(`/services.json`),
       },
       {
@@ -37,11 +40,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/Upcoming-events",
-        element: <PrivateRoute><UpcomingEvents></UpcomingEvents></PrivateRoute>,
+        element: (
+          <PrivateRoute>
+            <UpcomingEvents></UpcomingEvents>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/Pricing",
-        element: <PrivateRoute><Pricing></Pricing></PrivateRoute>,
+        element: (
+          <PrivateRoute>
+            <Pricing></Pricing>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/About-us",
@@ -50,7 +61,7 @@ const router = createBrowserRouter([
       {
         path: "/Contact-us",
         element: <ContactUs></ContactUs>,
-      }
+      },
     ],
   },
 ]);

@@ -12,7 +12,6 @@ const Register = () => {
   const handleGoogleSignIn = () => {
     googleSignIn()
     .then(result=>{
-        console.log(result.user);
         setGoogleSuccess(result.user)
        
 

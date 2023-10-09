@@ -4,21 +4,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Context } from "../context/AllContext";
 
 const Login = () => {
-  const { handleLogin, googleSignIn, setGoogleSuccess } = useContext(Context);
+  const { handleLogin, handleGoogleSignIn } = useContext(Context);
   const location = useLocation();
   const navigate = useNavigate();
 
-  const handleGoogleSignIn = () => {
-    googleSignIn()
-      .then((result) => {
-        console.log(result.user);
-        setGoogleSuccess(result.user);
-        navigate(location?.state ? location.state : "/");
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  };
+
 
   return (
     <div className=" h-screen max-h-full max-width-full w-screen bg-[url(https://i.ibb.co/r2m5nR9/bg-color.png)] bg-cover ">
@@ -73,7 +63,7 @@ const Login = () => {
         </center>
         <center>
           <button
-            onClick={handleGoogleSignIn}
+            onClick={()=>handleGoogleSignIn( navigate, location)}
             className="mt-2 text-white text-sm flex mb-2 items-center gap-1 rounded-md px-12 py-2 w-[270px] border-[0.1px] border-white"
           >
             <img

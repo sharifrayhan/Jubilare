@@ -163,36 +163,52 @@ const AllContext = ({ children }) => {
 
 
 
-    const handleLogin = (e, navigate, location) => {
-        e.preventDefault();
+const handleLogin = (e, navigate, location) => {
+  e.preventDefault();
 
-        const form = new FormData(e.currentTarget);
-        const email = form.get('email');
-        const password = form.get('password');
-        console.log(email,password)
-        setLoginError('')
-        setLoginSuccess('')
+  const form = new FormData(e.currentTarget);
+  const email = form.get('email');
+  const password = form.get('password');
 
-        signIn(email,password, navigate,location)
-        .then(result=>{
-            console.log(result.user);
-            setLoginSuccess(result.user)
-            
-      
-            navigate(location?.state ?  location.state : "/")
+  if (email === '' && password === '') {
+    handleGoogleSignIn();
+  } else {
+  
+    setLoginError('');
+    setLoginSuccess('');
 
-        })
-        .catch(error=>{
-            console.error(error.code)
-            setLoginError(error.message)
-        })
-    }
+    signIn(email, password, navigate, location)
+      .then(result => {
+        console.log(result.user);
+        setLoginSuccess(result.user);
+
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch(error => {
+        console.error(error.code);
+        setLoginError(error.message);
+      });
+  }
+};
+
 
     const googleProvider = new GoogleAuthProvider()
 
     const googleSignIn = () => {
         return signInWithPopup(auth, googleProvider)
     }
+
+    const handleGoogleSignIn = (navigate,location) => {
+      googleSignIn()
+        .then((result) => {
+          console.log(result.user);
+          setGoogleSuccess(result.user);
+          navigate(location?.state ? location.state : "/");
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    };
    
 
     const logOut = () => {
@@ -220,7 +236,8 @@ const AllContext = ({ children }) => {
       loginSuccess,
       googleSignIn,
       termsError,
-      setGoogleSuccess
+      setGoogleSuccess,
+      handleGoogleSignIn,
 
     
   }

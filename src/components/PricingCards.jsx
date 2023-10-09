@@ -25,7 +25,7 @@ const PricingCards = ({card}) => {
             <div className='p-4'>
                 <img className=' rounded-md h-[300px]  ' src={image} alt="" />
             </div>
-            <div className='flex flex-wrap p-5 gap-2'>
+            <div className='flex flex-wrap p-9 md:p-5 lg:p-5 gap-2'>
 
                 <div className=' p-6 glass rounded-lg flex  w-[250px] md:w-[300px] lg:w-[350px] flex-col gap-2 items-center text-center'>
                     <h1 className='text-white mb-3 font-semibold text-xl'>{firstPackage?.name}</h1>

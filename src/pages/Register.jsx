@@ -38,7 +38,7 @@ const Register = () => {
         <div>
             <h1 className=" mb-2 text-slate-200 font-semibold" >Photo URL</h1>
             <input className=" glass w-full placeholder-slate-300 py-3 px-3" required type="text" id="url" name="url" placeholder="Enter your photo url" />
-          </div>
+        </div>
           <div>
             <h1 className=" mb-2 text-slate-200 font-semibold" >Email</h1>
             <input className=" glass w-full placeholder-slate-300 py-3 px-3" required type="email" id="email" name="email" placeholder="Enter your email" />
